@@ -4,7 +4,7 @@
     --dark-cyan: hsl(185, 75%, 39%);
     --very-dark-blue: hsl(229, 23%, 23%);
     --dark-grayish-blue: hsl(227, 10%, 46%);
-    --dark-gray: hsl(0, 0%, 59%);
+    --dark-gray: rgba(150, 150, 150, 0.3);
 }
 
 * {
@@ -14,14 +14,103 @@
 }
 
 body {
-    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--very-dark-blue);
+    background: right 50vw bottom -50vh no-repeat url('./images/bg-pattern-top.svg'),
+        50vw 50vh no-repeat url('./images/bg-pattern-bottom.svg'),
+        var(--dark-cyan);
+}
+
+.card {
+    display: grid;
+    background: no-repeat url('./images/bg-pattern-card.svg'), white;
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-main img {
+    margin-top: 90px;
+    margin-bottom: 32px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.info-main {
+    text-align: center;
+}
+
+.info-main h2 {
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 16px;
+}
+
+.info-main p {
+    color: var(--dark-grayish-blue);
+}
+
+.info-main p:first-of-type {
+    display: inline;
+}
+
+.info-main p:last-of-type {
+    font-size: 16px;
+}
+
+.card-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid var(--dark-gray);
+}
+
+.card-bottom .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-bottom .info h3 {
+    margin-bottom: 12px;
+}
+
+.card-bottom .info p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--dark-grayish-blue);
 }
 
 .attribution {
+    position: fixed;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 11px;
     text-align: center;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+        width: 90vw;
+        min-width: 200px;
+    }
 }
