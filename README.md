@@ -7,6 +7,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -20,6 +21,11 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Screenshot
 
 <img src="./screenshot.png" width="50%">
+
+### Links
+
+- Solution URL: [Solution on Github](https://github.com/wesleybs90/profile-card-component-frontendmentor)
+- Live Site URL: [Live View on Netlify](https://frosty-clarke-0303a4.netlify.app)
 
 ## My process
 
